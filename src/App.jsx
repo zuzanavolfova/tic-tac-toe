@@ -42,7 +42,7 @@ function deriveWinner(gameBoard, players) {
 }
 
 function deriveGameboard(gameTurns) {
-  let gameBoard = [...initialGameBoard.map((array) => [...array])];
+  let gameBoard = [...INITIAL_GAME_BOARD.map((array) => [...array])];
 
   for (const turn of gameTurns) {
     const { square, player } = turn;
